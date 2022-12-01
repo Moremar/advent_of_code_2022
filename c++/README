@@ -1,0 +1,12 @@
+
+C++ solutions to the Advent of Code 2022 puzzles.
+
+The project uses CMake to build the Makefile hierarchy, so we can create the binaries with "make".
+
+To build and run the binaries :
+
+  $>  mkdir build
+  $>  cd build/
+  $>  cmake ..
+  $>  make
+  $>  ./day01/day01.bin
