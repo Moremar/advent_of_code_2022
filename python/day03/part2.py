@@ -16,4 +16,4 @@ def solve_part2(bags):
 
 if __name__ == "__main__":
     parsed = part1.parse("data.txt")
-    print('Part 1 :', solve_part2(parsed))
+    print('Part 2 :', solve_part2(parsed))

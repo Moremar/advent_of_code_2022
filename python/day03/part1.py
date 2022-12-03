@@ -8,14 +8,14 @@ def parse(input_path):
 
 
 def priority(c):
-    return (string.ascii_lowercase + string.ascii_uppercase).index(c) + 1
+    return string.ascii_letters.index(c) + 1
 
 
 def solve_part1(bags):
     res = 0
     for bag in bags:
-        for item_type in bag[:int(len(bag)/2)]:
-            if item_type in bag[int(len(bag)/2):]:
+        for item_type in bag[:len(bag)//2]:
+            if item_type in bag[len(bag)//2:]:
                 res += priority(item_type)
                 break
     return res
