@@ -1,10 +1,7 @@
 #include "part2.h"
-#include "../Common/Utils.h"
-
-#include <cassert>
-#include <map>
 
 using namespace std;
+
 
 namespace Day02 {
 

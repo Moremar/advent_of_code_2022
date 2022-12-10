@@ -1,8 +1,4 @@
 #include "part1.h"
-#include "../Common/Utils.h"
-
-#include <fstream>     // std::ifstream
-#include <map>
 
 using namespace std;
 

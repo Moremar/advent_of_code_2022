@@ -1,10 +1,7 @@
 #include "part1.h"
-#include "../Common/Utils.h"
-
-#include <algorithm>   // std::max_element
-#include <fstream>     // std::ifstream
 
 using namespace std;
+
 
 namespace Day01 {
 
