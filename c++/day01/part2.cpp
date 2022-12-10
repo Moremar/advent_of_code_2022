@@ -1,4 +1,4 @@
-#include "day01_part1.h"
+#include "part2.h"
 #include "../Common/Utils.h"
 
 #include <cassert>

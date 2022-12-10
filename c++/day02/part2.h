@@ -1,6 +1,6 @@
 #pragma once
 
-#include "day02_part1.h"
+#include "part1.h"
 #include <vector>
 
 namespace Day02 {

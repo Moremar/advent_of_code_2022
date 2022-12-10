@@ -1,6 +1,6 @@
 
-#include "../day01/day01_part1.h"
-#include "../day01/day01_part2.h"
+#include "../day01/part1.h"
+#include "../day01/part2.h"
 
 #include <iostream>
 

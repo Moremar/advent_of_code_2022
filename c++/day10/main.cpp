@@ -1,5 +1,5 @@
-#include "../day10/day10_part1.h"
-#include "../day10/day10_part2.h"
+#include "../day10/part1.h"
+#include "../day10/part2.h"
 
 #include <iostream>
 
