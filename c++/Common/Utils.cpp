@@ -36,3 +36,16 @@ string rtrim(const string& str, const string& chars) {
 string trim(const string& str, const string& chars) {
     return ltrim(rtrim(str, chars), chars);
 }
+
+vector<string> split(const string& s, const string& delim) {
+    vector<string> res;
+    string rest = s;
+    size_t pos = rest.find(delim);
+    while (pos != string::npos) {
+        res.push_back(rest.substr(0, pos));
+        rest = rest.substr(pos + delim.size());
+        pos = rest.find(delim);
+    }
+    res.push_back(rest.substr(0, pos));  // last part of the string
+    return res;
+}
