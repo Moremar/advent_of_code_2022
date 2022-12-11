@@ -1,11 +1,19 @@
 
 #pragma once
-
-#include <vector>
+#include <algorithm>   // std::max_element
+#include <cassert>
+#include <fstream>     // std::ifstream
+#include <iostream>
+#include <map>
+#include <numeric>     // std::reduce
+#include <set>
 #include <string>
+#include <utility>     // std::pair
+#include <vector>
 
 using std::string;
 using std::vector;
+
 
 /**
  * Return the lines of a file

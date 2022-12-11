@@ -1,4 +1,4 @@
-#include "day10_part1.h"
+#include "part1.h"
 #include "../Common/Utils.h"
 
 using namespace std;

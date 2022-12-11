@@ -1,8 +1,6 @@
 #pragma once
+#include "../Common/Utils.h"
 
-#include <string>
-#include <utility>    // std::pair
-#include <vector>
 
 namespace Day02 {
 

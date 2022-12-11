@@ -1,10 +1,7 @@
-#include "day01_part1.h"
-#include "../Common/Utils.h"
-
-#include <cassert>
-#include <numeric>   // std::reduce
+#include "part2.h"
 
 using namespace std;
+
 
 namespace Day01 {
     namespace Part2 {
