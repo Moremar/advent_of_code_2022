@@ -1,7 +1,5 @@
-
 #include "../day03/part1.h"
 #include "../day03/part2.h"
-#include <iostream>
 
 using namespace std;
 using namespace Day03;

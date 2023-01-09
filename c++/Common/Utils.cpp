@@ -2,9 +2,8 @@
 #include "Utils.h"
 #include "AdventException.h"
 
-#include <fstream>
-
 using namespace std;
+
 
 vector<string> getFileLines(const string& filePath) {
     vector<string> res;

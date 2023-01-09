@@ -3,7 +3,7 @@
 #include <algorithm>   // std::max_element
 #include <cassert>
 #include <fstream>     // std::ifstream
-#include <iostream>
+#include <iostream>    // std::cout
 #include <map>
 #include <numeric>     // std::reduce
 #include <set>
