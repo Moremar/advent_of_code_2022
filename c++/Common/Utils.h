@@ -6,6 +6,7 @@
 #include <iostream>    // std::cout
 #include <map>
 #include <numeric>     // std::reduce
+#include <regex>
 #include <set>
 #include <string>
 #include <utility>     // std::pair
