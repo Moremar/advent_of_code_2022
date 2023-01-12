@@ -48,3 +48,7 @@ vector<string> split(const string& s, const string& delim) {
     res.push_back(rest.substr(0, pos));  // last part of the string
     return res;
 }
+
+bool contains(const string& s, const string& sub) {
+    return s.find(sub) != string::npos;
+}

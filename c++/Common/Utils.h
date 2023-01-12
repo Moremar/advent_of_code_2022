@@ -2,6 +2,7 @@
 #pragma once
 #include <algorithm>   // std::max_element
 #include <cassert>
+#include <deque>
 #include <fstream>     // std::ifstream
 #include <iostream>    // std::cout
 #include <map>
@@ -30,3 +31,8 @@ string trim(const string& str, const string& chars = "\t\n\v\f\r ");
  * Split a string on a delimiter
  */
 vector<string> split(const string &s, const string &delim);
+
+/**
+ * Return true if the string contains the substring
+ */
+bool contains(const string& s, const string& sub);
