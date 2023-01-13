@@ -5,6 +5,16 @@
 using namespace std;
 
 
+Coord Coord::operator+(const Coord& o) const {
+    return { x + o.x, y  + o.y };
+}
+
+
+bool Coord::operator<(const Coord& o) const {
+    return x < o.x || (x == o.x && y < o.y);
+}
+
+
 vector<string> getFileLines(const string& filePath) {
     vector<string> res;
     ifstream f { filePath };

@@ -6,7 +6,7 @@
 #include <fstream>     // std::ifstream
 #include <iostream>    // std::cout
 #include <map>
-#include <numeric>     // std::reduce
+#include <numeric>     // std::reduce, std::iota
 #include <regex>
 #include <set>
 #include <string>
@@ -16,6 +16,12 @@
 using std::string;
 using std::vector;
 
+struct Coord {
+    Coord(int x, int y): x(x), y(y) {}
+    Coord operator+(const Coord& o) const;
+    bool operator<(const Coord& o) const;
+    int x, y;
+};
 
 /**
  * Return the lines of a file
