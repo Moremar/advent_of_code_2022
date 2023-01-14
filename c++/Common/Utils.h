@@ -15,6 +15,7 @@
 #include <numeric>     // std::reduce, std::iota
 #include <regex>
 #include <set>
+#include <sstream>     // ostringstream
 #include <string>
 #include <utility>     // std::pair
 #include <vector>
