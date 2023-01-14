@@ -1,7 +1,11 @@
 
 #pragma once
+
+#include "Coord.h"
+
 #include <algorithm>   // std::max_element
 #include <cassert>
+#include <cmath>       // abs
 #include <deque>
 #include <fstream>     // std::ifstream
 #include <iostream>    // std::cout
@@ -16,12 +20,6 @@
 using std::string;
 using std::vector;
 
-struct Coord {
-    Coord(int x, int y): x(x), y(y) {}
-    Coord operator+(const Coord& o) const;
-    bool operator<(const Coord& o) const;
-    int x, y;
-};
 
 /**
  * Return the lines of a file
