@@ -7,6 +7,7 @@
 #include <array>
 #include <cassert>
 #include <cmath>       // abs
+#include <compare>     // <=> operator
 #include <deque>
 #include <fstream>     // std::ifstream
 #include <iostream>    // std::cout
