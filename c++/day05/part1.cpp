@@ -29,7 +29,7 @@ namespace Day05 {
             ++i;
         }
 
-        for (auto& line = lines.begin() + i + 2; line != lines.end(); ++line) {
+        for (auto line = lines.cbegin() + i + 2; line != lines.cend(); ++line) {
             smatch match;
             regex_search(line->begin(), line->end(), match, pattern);
             instructions.push_back(Instruction{ stoi(match[1]),  stoi(match[2])-1, stoi(match[3])-1 });
