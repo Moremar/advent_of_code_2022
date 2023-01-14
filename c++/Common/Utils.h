@@ -4,6 +4,7 @@
 #include "Coord.h"
 
 #include <algorithm>   // std::max_element
+#include <array>
 #include <cassert>
 #include <cmath>       // abs
 #include <deque>
