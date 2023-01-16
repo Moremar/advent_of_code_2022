@@ -13,6 +13,7 @@
 #include <iostream>    // std::cout
 #include <map>
 #include <numeric>     // std::reduce, std::iota
+#include <ranges>      // std::views
 #include <regex>
 #include <set>
 #include <sstream>     // ostringstream
