@@ -2,6 +2,7 @@
 #pragma once
 
 #include "Coord.h"
+#include "Coord3D.h"
 
 #include <algorithm>   // std::max_element
 #include <array>
