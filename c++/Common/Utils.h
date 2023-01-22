@@ -9,11 +9,13 @@
 #include <cassert>
 #include <cmath>       // abs
 #include <compare>     // <=> operator
+#include <complex>
 #include <deque>
 #include <fstream>     // std::ifstream
 #include <iostream>    // std::cout
 #include <map>
 #include <numeric>     // std::reduce, std::iota
+#include <optional>
 #include <ranges>      // std::views
 #include <regex>
 #include <set>
