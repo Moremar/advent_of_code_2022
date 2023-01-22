@@ -49,6 +49,12 @@ vector<string> split(const string& s, const string& delim) {
     return res;
 }
 
+vector<string> regexSplit(const string& s, const regex& pattern) {
+  sregex_token_iterator iter(s.begin(), s.end(), pattern, -1);
+  sregex_token_iterator end;
+  return { iter, end };
+}
+
 bool contains(const string& s, const string& sub) {
     return s.find(sub) != string::npos;
 }

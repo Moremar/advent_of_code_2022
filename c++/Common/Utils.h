@@ -43,6 +43,11 @@ string trim(const string& str, const string& chars = "\t\n\v\f\r ");
  */
 vector<string> split(const string &s, const string &delim);
 
+/*
+ * Split a string on a regex pattern
+ */
+vector<std::string> regexSplit(const std::string& s, const std::regex& pattern);
+
 /**
  * Return true if the string contains the substring
  */
