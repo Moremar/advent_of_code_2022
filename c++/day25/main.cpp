@@ -1,7 +1,5 @@
 #include "../day25/part1.h"
 
-#include <chrono>
-
 using namespace std;
 using namespace Day25;
 
@@ -18,6 +16,8 @@ int main(int argc, char* argv[]) {
     const auto afterPart1    = chrono::high_resolution_clock::now();
     const auto durationPart1 = duration_cast<chrono::milliseconds>(afterPart1 - start).count();
     cout << "Part 1 : " << resultPart1 << "  (" << durationPart1 << " ms)" << endl;
+
+    // no part 2 for day 25
 
     return 0;
 }

@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
     const auto platform = platformStr == "WINDOWS" ? platform_t::windows_e : platform_t::unix_e;
 
     // run the binaries for all days
-    for (int i = 1; i <= 24; ++i) {
+    for (int i = 1; i <= 25; ++i) {
         const string paddedNumber = (i < 10 ? "0" : "") + to_string(i);
         const string command = platform == platform_t::windows_e
                              ? "day" + paddedNumber + "\\Release\\day" + paddedNumber + ".bin.exe"

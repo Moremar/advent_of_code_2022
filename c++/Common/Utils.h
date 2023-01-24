@@ -7,6 +7,7 @@
 #include <algorithm>   // std::max_element
 #include <array>
 #include <cassert>
+#include <chrono>
 #include <cmath>       // abs
 #include <compare>     // <=> operator
 #include <complex>

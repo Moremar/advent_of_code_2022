@@ -14,9 +14,10 @@ namespace Day02 {
 
     using Strategy = std::pair<Move_t, Move_t>;
     
-    int solve(const std::vector<Strategy>& input);
-
     namespace Part1 {
+        
         std::vector<Strategy> parse(const std::string& filename);
+
+        int solve(const std::vector<Strategy>& input);
     }
 }

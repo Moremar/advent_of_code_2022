@@ -7,13 +7,23 @@ using namespace Day02;
 
 int main(int argc, char* argv[]) {
 
-    const string inputFilePath = argc > 1 ? argv[1] : "../day02/data.txt";
-    
-    int part1 = solve(Part1::parse(inputFilePath));
-    cout << "Part 1 : " << part1 << endl;
+    const auto start = chrono::high_resolution_clock::now();
 
-   int part2 = solve(Part2::parse(inputFilePath));
-   cout << "Part 2 : " << part2 << endl;
+    const string inputFilePath = argc > 1 ? argv[1] : "../day02/data.txt";
+
+    // part 1
+    const auto parsedPart1   = Part1::parse(inputFilePath);
+    const auto resultPart1   = Part1::solve(parsedPart1);
+    const auto afterPart1    = chrono::high_resolution_clock::now();
+    const auto durationPart1 = duration_cast<chrono::milliseconds>(afterPart1 - start).count();
+    cout << "Part 1 : " << resultPart1 << "  (" << durationPart1 << " ms)" << endl;
+
+    // part 2
+    const auto parsedPart2   = Part2::parse(inputFilePath);
+    const auto resultPart2   = Part1::solve(parsedPart2);
+    const auto afterPart2    = chrono::high_resolution_clock::now();
+    const auto durationPart2 = duration_cast<chrono::milliseconds>(afterPart2 - afterPart1).count();
+    cout << "Part 2 : " << resultPart2 << "  (" << durationPart2 << " ms)" << endl;
 
     return 0;
 }

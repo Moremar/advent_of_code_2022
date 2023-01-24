@@ -1,8 +1,6 @@
 #include "../day24/part1.h"
 #include "../day24/part2.h"
 
-#include <chrono>
-
 using namespace std;
 using namespace Day24;
 

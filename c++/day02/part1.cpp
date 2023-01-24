@@ -10,27 +10,29 @@ namespace Day02 {
         { 'X', Move_t::ROCK }, { 'Y', Move_t::PAPER }, { 'Z', Move_t::SCISSORS }
     };
 
-    int solve(const vector<Strategy>& parsed) {
-        int score { 0 };
-        for (const Strategy& strategy : parsed) {
-            // shape score
-            const auto& [hisPlay, myPlay] = strategy;
-            score += val(strategy.second) + 1;
-            // outcome score
-            score += val(myPlay) == (val(hisPlay) + 1) % 3 ? 6    // Victory
-                   : val(myPlay) == (val(hisPlay) + 2) % 3 ? 0    // Defeat
-                   : 3;                                           // Draw
-        }
-        return score;
-    }
 
     namespace Part1 {
+
         vector<Strategy> parse(const string& filename) {
             vector<Strategy> parsed;
             for (const string& line : getFileLines(filename)) {
                 parsed.emplace_back(MOVES.at(line[0]), MOVES.at(line[2]));
             }
             return parsed;
+        }
+
+        int solve(const vector<Strategy>& parsed) {
+            int score { 0 };
+            for (const Strategy& strategy : parsed) {
+                // shape score
+                const auto& [hisPlay, myPlay] = strategy;
+                score += val(strategy.second) + 1;
+                // outcome score
+                score += val(myPlay) == (val(hisPlay) + 1) % 3 ? 6    // Victory
+                       : val(myPlay) == (val(hisPlay) + 2) % 3 ? 0    // Defeat
+                       : 3;                                           // Draw
+            }
+            return score;
         }
     }
 }
