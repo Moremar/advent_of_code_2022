@@ -34,3 +34,6 @@ add_subdirectory(day22)
 add_subdirectory(day23)
 add_subdirectory(day24)
 add_subdirectory(day25)
+
+# binary to run the solutions for all 25 days
+add_executable(runAllDays.bin runAllDays.cpp)
