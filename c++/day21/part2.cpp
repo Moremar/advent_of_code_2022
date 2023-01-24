@@ -23,7 +23,7 @@ namespace Day21 {
             const auto left  = rootMonkey->left->getVal();
             const auto right = rootMonkey->right->getVal();
             // the value shouted by the "humn" monkey is on the left side
-            return static_cast<long long>((right.real() - left.real()) / left.imag());
+            return static_cast<long long>(round((right.real() - left.real()) / left.imag()));
         }
     }
 }
