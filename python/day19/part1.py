@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import re
+import time
 
 ORE, CLAY, OBS, GEODE = 0, 1, 2, 3
 CACHE = {}
@@ -90,5 +91,7 @@ def solve_part1(blueprints, time):
 
 
 if __name__ == "__main__":
+    start = time.time()
     parsed = parse("data.txt")
-    print('Part 1 :', solve_part1(parsed, 24))
+    result = solve_part1(parsed, 24)
+    print(f'Part 1 : {result}  ({round(1000 * (time.time() - start))} ms)')

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import time
 
 DIRS = {'U': (0, 1), 'D': (0, -1), 'L': (-1, 0), 'R': (1, 0)}
 
@@ -31,5 +32,7 @@ def solve_part1(instructions):
 
 
 if __name__ == "__main__":
+    start = time.time()
     parsed = parse("data.txt")
-    print('Part 1 :', solve_part1(parsed))
+    result = solve_part1(parsed)
+    print(f'Part 1 : {result}  ({round(1000 * (time.time() - start))} ms)')

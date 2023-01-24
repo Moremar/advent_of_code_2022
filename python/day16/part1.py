@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import collections
 import re
+import time
 
 
 class Valve:
@@ -99,5 +100,7 @@ def solve_part1(valves):
 
 
 if __name__ == "__main__":
-    valves = parse("data.txt")
-    print('Part 1 :', solve_part1(valves))
+    start = time.time()
+    parsed = parse("data.txt")
+    result = solve_part1(parsed)
+    print(f'Part 1 : {result}  ({round(1000 * (time.time() - start))} ms)')

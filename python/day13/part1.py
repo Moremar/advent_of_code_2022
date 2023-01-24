@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import time
+
 
 def parse(input_path):
     with open(input_path, 'r') as f:
@@ -28,5 +30,7 @@ def solve_part1(pairs):
 
 
 if __name__ == "__main__":
+    start = time.time()
     parsed = parse("data.txt")
-    print('Part 1 :', solve_part1(parsed))
+    result = solve_part1(parsed)
+    print(f'Part 1 : {result}  ({round(1000 * (time.time() - start))} ms)')

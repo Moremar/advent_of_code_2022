@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import part1
 import collections
 import time
+import part1
 
 
 # This solution is very memory-intensive, to run it on Pycharm we need to increase the available memory
@@ -123,7 +123,7 @@ def solve_part2(valves):
 
 
 if __name__ == "__main__":
-    start_time = time.time()
-    valves = part1.parse("data.txt")
-    print('Part 1 :', solve_part2(valves))
-    print('Execution took', time.time() - start_time, 'seconds')
+    start = time.time()
+    parsed = part1.parse("data.txt")
+    result = solve_part2(parsed)
+    print(f'Part 2 : {result}  ({round(1000 * (time.time() - start))} ms)')

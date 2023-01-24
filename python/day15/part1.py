@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import re
+import time
 
 
 class Sensor:
@@ -44,5 +45,7 @@ def solve_part1(sensors, target_y):
 
 
 if __name__ == "__main__":
+    start = time.time()
     parsed = parse("data.txt")
-    print('Part 1 :', solve_part1(parsed, 2000000))
+    result = solve_part1(parsed, 2000000)
+    print(f'Part 1 : {result}  ({round(1000 * (time.time() - start))} ms)')

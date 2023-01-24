@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import time
 import part1
 
 MOVES = {'A': part1.ROCK, 'B': part1.PAPER, 'C': part1.SCISSORS}
@@ -17,5 +17,7 @@ def parse(input_path):
 
 
 if __name__ == "__main__":
+    start = time.time()
     parsed = parse("data.txt")
-    print('Part 2 :', part1.solve_part1(parsed))
+    result = part1.solve_part1(parsed)
+    print(f'Part 2 : {result}  ({round(1000 * (time.time() - start))} ms)')

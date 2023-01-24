@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import time
 import part1
 
 # without the "divide by 3" operation, we get unmanageably big worry levels
@@ -31,5 +32,7 @@ def solve_part2(monkeys):
 
 
 if __name__ == "__main__":
+    start = time.time()
     parsed = part1.parse("data.txt")
-    print('Part 1 :', solve_part2(parsed))
+    result = solve_part2(parsed)
+    print(f'Part 2 : {result}  ({round(1000 * (time.time() - start))} ms)')

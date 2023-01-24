@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import re
+import time
 
 EMPTY, WALL = '.', '#'
 RIGHT, DOWN, LEFT, UP = range(4)
@@ -55,5 +56,7 @@ def solve_part1(parsed, wrapping_fn):
 
 
 if __name__ == "__main__":
+    start = time.time()
     parsed = parse("data.txt")
-    print('Part 1 :', solve_part1(parsed, wrap))
+    result = solve_part1(parsed, wrap)
+    print(f'Part 1 : {result}  ({round(1000 * (time.time() - start))} ms)')

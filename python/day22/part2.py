@@ -1,4 +1,6 @@
-from part1 import *
+import time
+import part1
+from part1 import DIRECTIONS, LEFT, UP, RIGHT, DOWN
 
 # The input file has the following shape, so we specify the links between its faces :
 #
@@ -62,6 +64,8 @@ def wrap2(world, pos, direction):
 
 
 if __name__ == "__main__":
-    parsed = parse("data.txt")
+    start = time.time()
+    parsed = part1.parse("data.txt")
     build_links(50)
-    print('Part 2 :', solve_part1(parsed, wrap2))
+    result = part1.solve_part1(parsed, wrap2)
+    print(f'Part 2 : {result}  ({round(1000 * (time.time() - start))} ms)')

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import time
+
 
 class Node:
     def __init__(self, id, val, prev=None):
@@ -67,5 +69,7 @@ def solve_part1(parsed, loops):
 
 
 if __name__ == "__main__":
+    start = time.time()
     parsed = parse("data.txt", 1)
-    print('Part 1 :', solve_part1(parsed, 1))
+    result = solve_part1(parsed, 1)
+    print(f'Part 1 : {result}  ({round(1000 * (time.time() - start))} ms)')
