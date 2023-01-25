@@ -78,18 +78,14 @@ Part 2 : 11186  (1 ms)
 
 [ ... ] 
 
-DAY 23 : day23\Release\day23.bin.exe
-Part 1 : 3766 (53 ms)
-Part 2 : 954 (5014 ms)
-
 DAY 24 : day24\Release\day24.bin.exe
-Part 1 : 232  (706 ms)
-Part 2 : 715  (2059 ms)
+Part 1 : 232  (505 ms)
+Part 2 : 715  (1598 ms)
 
 DAY 25 : day25\Release\day25.bin.exe
 Part 1 : 2=0=02-0----2-=02-10  (0 ms)
 
-All days solutions took 44 seconds to complete.
+All days solutions took 37 seconds to complete.
 ```
 
 ## Debugging in VS Code
