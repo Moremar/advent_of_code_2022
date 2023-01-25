@@ -42,7 +42,7 @@ def compute(tree):
 
 
 def solve_part1(tree):
-    return compute(tree)
+    return round(compute(tree))
 
 
 if __name__ == "__main__":
